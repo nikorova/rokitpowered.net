@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<title>RokitPowered</title>
+<meta name="description" content="Home of RokitPowered! Developement and Design - Wizard for hire!">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+	<div id="wrapper"> 
+	<ul id="navigation">
+		{% for item in navigation %}
+			<a href="{{ item.href }}"><li>{{ item.caption }}</li></a>
+		{% endfor %}
+	</ul>
+
+	<header>
+	<h2 class="inset greyText">Welcome to the fancy new face of</h2>
+	<h1 class="insetDark" >  Rokit Powered!  </h1>
+	<h4 class="greyText" > {{ content }} </h4>
+	</header>
+
+	<article class="content">
+	<h3> In the mean time, take a look at some of the things I've been studying:</h3>
+	<ul id="aids" class="linkDown rounded-list">
+		{% for item in aids %}
+			<li>
+				<a href="{{ item.href }}">{{ item.caption }}</a>
+				<p class="blurb">{{ item.blurb }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+	</article>
+
+	<article class="content">
+	<h3> And here a few blogs of personal interest to me: </h3>
+	<ul id="likes" class="linkDown rounded-list">
+		{% for item in likes%}
+			<li>
+				<a href="{{ item.href }}">{{ item.caption }}</a>
+				<p class="blurb">{{ item.blurb }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+	</article>
+
+	</div>
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		 s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body * { margin: 0; padding: 0; }
+body { 
+	font-family: 'Arvo', serif; 
+	background: url('../static/escheresque1.png');
+}
+ul { list-style: none; }
+a { text-decoration: none; }
+
+#navigation { margin: 0px 0px 20px 0px; text-align: center; }
+#aids { margin: 0px 0px 20px 0px; }
+#likes { margin: 0px 0px 20px 0px; }
+
+#wrapper { 
+		border: 1px solid rgb(76, 150, 16);
+		border-radius: 20px; 
+		background: rgb(163, 255, 164);
+		padding: 20px;
+		margin: 50px auto;
+		width: 80%;
+		min-width: 760px;
+}
+
+#navigation li { 
+	border-radius: 10px 0px 10px 0px;
+	border: 1px solid rgb(146, 206, 219);
+	padding: 1em 2em;
+	margin: .3em;
+	background: rgb(184, 237, 249);
+	display: inline-block; 
+	font-weight: bold;
+	color: #000;
+}
+#navigation li:hover{ background: rgb(131, 210, 247); }
+
+header { 
+	font-size: 1.5em; 
+	margin: 0px auto; 
+	padding: 0px 10px;
+	width: 70%; 
+	text-align: center; 
+	border: 3px solid rgb(76, 150, 16);
+	border-top: none;
+	border-bottom: none;
+	border-radius: 20px;
+}
+.greyText { color: rgb(137, 198, 137); }
+.content {
+	margin: 15px auto;
+	padding: 10px;
+	width: 65%;
+	border: 1px solid rgb(76, 150, 16);
+	border-radius: 10px; 
+	background: rgb(184, 249, 184);
+	font-family: 'Arvo', sans-serif;
+}
+article.content:nth-child(2) { margin-left: 15px; }
+.linkDown { 
+		list-style: none;
+}
+
+.rounded-list li { margin: 20px 0 0 0; }
+.rounded-list a{
+		width: 30em;
+		position: relative;
+		display: block;
+		padding: .4em .2em .4em 1em;
+		margin: .5em 0;
+		background: rgb(184, 237, 249);
+		color: #444;
+		text-decoration: none;
+		border-radius: .3em;
+		transition: all .3s ease-out;	
+		border-bottom: 1px solid rgb(146, 206, 219);
+		font-weight: bold;
+}
+.rounded-list a:hover{ background: #eee; }
+
+.blurb {
+	margin: -1px 0px 0px 25px;
+	backround: #ddd;
+	border-radius: 0 .2em .2em 0;
+}
