@@ -1,23 +1,19 @@
 body * { margin: 0; padding: 0; }
-body { 
-	font-family: 'Arvo', serif; 
-	background: url('../static/escheresque1.png');
-}
+body { font-family: Arial, Helvetica, sans-serif; }
 ul { list-style: none; }
 a { text-decoration: none; }
 
-#navigation { margin: 0px 0px 20px 0px; text-align: center; }
+#navigation { margin: 0px 0px 20px 0px; }
 #aids { margin: 0px 0px 20px 0px; }
 #likes { margin: 0px 0px 20px 0px; }
 
 #wrapper { 
 		border: 1px solid rgb(76, 150, 16);
-		border-radius: 20px; 
+		border-radius: 10px; 
 		background: rgb(163, 255, 164);
 		padding: 20px;
 		margin: 50px auto;
-		width: 80%;
-		min-width: 760px;
+		width: 90%;
 }
 
 #navigation li { 
@@ -32,26 +28,15 @@ a { text-decoration: none; }
 }
 #navigation li:hover{ background: rgb(131, 210, 247); }
 
-header { 
-	font-size: 1.5em; 
-	margin: 0px auto; 
-	padding: 0px 10px;
-	width: 70%; 
-	text-align: center; 
-	border: 3px solid rgb(76, 150, 16);
-	border-top: none;
-	border-bottom: none;
-	border-radius: 20px;
-}
-.greyText { color: rgb(137, 198, 137); }
+header { font-size: 1.5em; margin: 0px auto; width: 90%; text-align: center; }
+.inset { text-shadow: 0px -1px 3px white; }
 .content {
-	margin: 15px auto;
-	padding: 10px;
-	width: 65%;
-	border: 1px solid rgb(76, 150, 16);
-	border-radius: 10px; 
-	background: rgb(184, 249, 184);
-	font-family: 'Arvo', sans-serif;
+		margin: 15px auto;
+		width: 65%;
+		border: 1px solid rgb(76, 150, 16);
+		border-radius: 10px; 
+		padding: 10px;
+		background: rgb(184, 249, 184);
 }
 article.content:nth-child(2) { margin-left: 15px; }
 .linkDown { 
@@ -60,7 +45,7 @@ article.content:nth-child(2) { margin-left: 15px; }
 
 .rounded-list li { margin: 20px 0 0 0; }
 .rounded-list a{
-		width: 30em;
+		width: 26em;
 		position: relative;
 		display: block;
 		padding: .4em .2em .4em 1em;
